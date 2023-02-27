@@ -147,11 +147,11 @@
 
 </div>
 
-    <div class="" style="background-color: green ;margin: 0 auto;">
+    <div class="" style="margin: 0 auto;">
         <div class="pricingdiv" >
             <h3 class="chooseaplanheading">Choose Plan</h3>
             <div class="plansDiv" >
-                <div class="planDiv price-card " style="background-color:yellow ;">
+                <div class="planDiv price-card" >
                     <h4 class="planDivPlanName">Basic Plan
                     </h4>
                     <div class='planDivPlanPrice price'>
@@ -233,6 +233,115 @@
                 </div>
             </div>
         </div>
+        <!-- modal1 -->
+         <div class="makepaymentModalcontainer" id="makepaymentModalcontainer2">
+            <div>
+                 <div style="background-color:#A5A5A5;display:flex;align-items: center;justify-content: space-between;padding: 0 5%;">
+                 <span class="viewmemomodaltitle" style="color: #A5A5A5;">View memo</span>
+                    <i class="fa-solid fa-circle-xmark " id="viewmemoModalClose"></i>
+            </div>
+             <div class="makepaymentform2">
+            
+           <button id="makepaymentbtn1">Make payment</button>
+           <div class="recurring">
+                <input type="checkbox" name="" id="">
+                <p style="margin-left: 0.3vw;color: #A5A5A5;">is this a recurring payment?</p>
+           </div>
+        </div> 
+            </div>
+            <!-- modal2 -->
+        <div class="makepaymentModalcontainer" id="makepaymentModalcontainer">
+             <div class="makepaymentform">
+            <div class="makepaymentmodaltittlediv">
+                <h1 class="makepaymentmodaltitle">Make Payment</h1>
+                <i class="fa-solid fa-circle-xmark makepaymentdropdowncanclebtn" id="makepaymentModalClose"></i>
+            </div>
+             <div class="makepaymentdetailsdiv">
+                 <div class="makepaymentcardnumberdiv">
+                     <h1 class="makepaymentmodallabel">Card Number</h1>
+                     <input type="text" placeholder="xxxx xxxx xxxx xxxx" class="makepaymentmodalinputs" />
+                 </div>
+                 <div class="makepaymentmodalinputsdiv">
+                     <div class="ExpiryDate">
+                         <h1 class="makepaymentmodallabel">Expiry Date</h1>
+                         <input type="department" placeholder="Enter Card Expiry Date" class="makepaymentmodalExpirydate" />
+                     </div>
+                     <div class="cvv">
+                         <h1 class="makepaymentmodallabel">CVV</h1>
+                         <input type="email" placeholder="Enter cvv " class="makepaymentmodalcvv" />
+                     </div>
+                 </div>
+                 <button class="makepaymentmodalpay" id="makepaymentbtn2" style="margin-top: 2%;"><h1>Pay</h1>
+                 </button>
+             </div>
+             </div> 
+    </div>
+    </div>
+    <!-- modal3 -->
+    <div class="makepaymentModalcontainer" id="makepaymentModalcontainer3">
+        <div class="makepaymentform2">
+            <div class="payment-success">
+                <img src="../assets/Group 47.svg" alt="">
+                <p>Payment succesful</p>
+            </div>
+           <a href="/html/login.html">Proceed to Login</a>
+        </div>
+    </div>
+    </div>
+   <script>
+      function toggleMakePayment1() {
+  if (
+    document.getElementById("makepaymentModalcontainer2").style.display === "none"
+  ) {
+    document.getElementById("makepaymentModalcontainer2").style.display = "flex";
+  } else {
+    document.getElementById("makepaymentModalcontainer2").style.display = "none";
+  }
+}
+document
+  .getElementById("viewmemoModalClose")
+  .addEventListener("click", toggleMakePayment1);
+
+    const views = document.querySelectorAll(".choosePlanBtn");
+    for (let i = 0; i < views.length; i++) {
+        views[i].addEventListener("click", toggleMakePayment1 );
+    }
+   </script>
+   
+   <script>
+    function toggleMakePayment2() {
+  if (
+    document.getElementById("makepaymentModalcontainer").style.display === "none"
+  ) {
+    document.getElementById("makepaymentModalcontainer").style.display = "flex";
+  } else {
+    document.getElementById("makepaymentModalcontainer").style.display = "none";
+  }
+}
+document
+  .getElementById("makepaymentModalClose")
+  .addEventListener("click", toggleMakePayment2);
+document
+  .getElementById("makepaymentbtn1")
+  .addEventListener("click", toggleMakePayment2);
+   </script>
+   <script>
+    function toggleMakePayment3() {
+  if (
+    document.getElementById("makepaymentModalcontainer3").style.display === "none"
+  ) {
+    document.getElementById("makepaymentModalcontainer3").style.display = "flex";
+  } else {
+    document.getElementById("makepaymentModalcontainer3").style.display = "none";
+  }
+}
+// document
+//   .getElementById("makepaymentModalClose")
+//   .addEventListener("click", toggleMakePayment2);
+document
+  .getElementById("makepaymentbtn2")
+  .addEventListener("click", toggleMakePayment3);
+   </script>
     </div>
     <script src="../js/layout.js"></script>   
 </body>

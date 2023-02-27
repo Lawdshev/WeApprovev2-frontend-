@@ -142,22 +142,22 @@
 
         <div class="table-control mngstaff">
             <div class="p" style="margin-top: 0;">Process Memo</div>
-            <div class="d-flex align-items-center justify-content-around" style="width: 70%;">
+            <div class="d-flex align-items-center justify-content-around datesDiv" style="width: 70%;">
                <div class=" d-flex align-items-center "  style="width: 35%;">
                     <label for="date">Date</label>
                     <input placeholder="" value="" type="date" class="datePicker" style="margin-left: 5%;"/>
                 </div>
                 <div class=" d-flex align-items-center staffdropdown " style="width: 35%;">
-                   <span>Staff</span>
-                    <select name="" id="" style="margin-left: 5%;margin-right: 5%; width: 80%;">
+                   <label>Staff</label>
+                    <select name="" id="staffselect" style="margin-left: 5%;margin-right: 5%; width: 80%;">
                         <option value=""></option>
                       <option value="">option1</option>
                         <option value="">option2</option>
                     </select>
                 </div>
                 <div class=" d-flex align-items-center staffdropdown " style="width: 35%;">
-                   <span>Status</span>
-                    <select name="" id="" style="margin-left: 5%; width: 80%;">
+                   <label>Status</label>
+                    <select name="" id="statusselect" style="margin-left: 5%; width: 80%;">
                         <option value=""></option>
                         <option value="">option1</option>
                         <option value="">option2</option>
@@ -295,7 +295,7 @@
             <div id="viewMemomodalcontainer">
                 <div class="memo-form">
                     <div class="viewmemomodaltittlediv">
-                        <h1 class="viewmemomodaltitle">View memo</h1>
+                        <span class="viewmemomodaltitle">View memo</span>
                         <i class="fa-solid fa-circle-xmark viewmemodropdowncanclebtn" id="viewmemoModalClose"></i>
                     </div>
                     <div class="viewmemoitemsdiv">

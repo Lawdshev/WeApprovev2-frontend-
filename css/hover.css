@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'DaxlinePro';
+    src: url('../assets/DaxlinePro-Regular/DaxlinePro-Regular.ttf') format('opentype');
+}
+
+h1,h2,h3,h4,h5,h6,p,span,div,a,button,section{
+  font-family: 'DaxlinePro', sans-serif;
+}
 .feature-card:hover{
     border: solid 2.5px #C3213185 !important ;
 }
