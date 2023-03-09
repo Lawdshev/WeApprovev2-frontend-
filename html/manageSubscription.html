@@ -120,7 +120,7 @@
                 <div
                     class="visibledropdown flex px-1 items-center justify-between w-full h-[3.1vw] border-[1px] border-[#EAAC2980] border-solid">
                     <img src="../assets/girl.jpg" alt="" srcset="" class="userImg">
-                    <h1 class="userName text-[1vw] font-medium text-[#707070]">Adeola Thompson</h1>
+                    <span class="userName text-[1vw] font-medium text-[#707070]">Adeola Thompson</span>
                     <span class="dropdown-toggle " style="background-color: transparent !important;"></span>
                     <!-- <span class="dropdown-toggle fa-solid fa-caret-down border-none"></span>  -->
                 </div>
@@ -200,23 +200,19 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- date picker -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-  <!-- <script>
-    $(document).ready(function() {
-    $('#calendar-icon').click(function() {
-      $('#datepicker').datepicker('show');
-    });
-    
-    });
-  </script> -->
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
     <script src="../js/layout.js"></script>
 </body>
 
 </html>
 <script>
-    $(document).ready(function () {
-        $('#example').DataTable();
-        $(".dataTables_filter").hide();
-        $(".dataTables_length").hide();
-        // $('.datepicker').datepicker();
-    });
+      $(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'csvHtml5'
+        ]
+    } );
+} );
 </script>

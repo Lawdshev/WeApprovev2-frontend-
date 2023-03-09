@@ -93,12 +93,14 @@ thead{
     outline: none;
     width: 70%;
 }
- /* .pagination > li > a, .pagination > li > span{background-color:red} */
  .pagination>li.active>a,
  .pagination>li.active>span {
      background-color: transparent;
      color: #D40E1F;
+     outline:none !important;
  }
+
+ 
 
  .pagination .page-item a.page-link {
      border: none;
@@ -222,14 +224,18 @@ thead{
      height: 100%;
  }
 
- #example_info,
- #example_paginate {
+ #example_info {
      text-align: center;
      color: #8E8E8E;
+     margin: auto;
+ }
+ #example_paginate{
+     text-align: center;
+     color: #8E8E8E;
+     margin: auto;
  }
 
  .paginate_button>a {
-     /* background-color: #D40E1F0D!important; */
      border: none;
      color: #8E8E8E;
  }
@@ -469,3 +475,72 @@ thead{
             text-decoration: underline;
             color: #334AFF;
         }
+
+        /* Custom styles for DataTables Buttons */
+
+/* Adjust the button group position */
+input[type=search]{
+    outline: none;
+}
+.dt-buttons{
+     background-color: white !important;
+}
+.dataTables_wrapper .dt-buttons {
+  float: right;
+ 
+  margin-right: 5%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+/* Style the button label */
+.dt-button {
+  color: #a5a5a5;
+  background-color: white;
+  border: none;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Style the button on hover */
+.dt-button:hover {
+  color: #D40E1F ;
+}
+
+/* Style the button on active */
+.dt-button.active {
+  color: #D40E1F;
+}
+
+/* Style the button icon */
+.dt-button::before {
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  margin-right: .5rem;
+}
+
+/* Style the CSV download icon */
+.buttons-csv::before {
+  content: "\f019"; /* Unicode for the fa-file-excel-o icon */
+}
+
+/* Remove outline from DataTables search input */
+.dataTables_wrapper .dataTables_filter input[type=search] {
+  outline: none;
+}
+
+input.active{
+    border: none;
+    outline: none;
+}
+
+
+
+
+.editAction,.fa-pencil {
+    cursor: pointer;
+    font-size: 12px;
+
+}

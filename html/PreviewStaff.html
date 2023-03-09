@@ -101,6 +101,35 @@
                 </div>
             </div>
         </div>
+        <!-- Dropdown menu -->
+<div class="dropdownDiv">
+    <div class="dropdown">
+        <div
+            class="visibledropdown flex px-1 items-center justify-between w-full h-[3.1vw] border-[1px] border-[#EAAC2980] border-solid">
+            <img src="../assets/girl.jpg" alt="" srcset="" class="userImg">
+            <span class="userName text-[1vw] font-medium text-[#707070]">Adeola Thompson</span>
+            <span class="dropdown-toggle " style="background-color: transparent !important;"></span>
+            <!-- <span class="dropdown-toggle fa-solid fa-caret-down border-none"></span>  -->
+        </div>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" data-value="1" style="border-bottom:1px solid #D1D1D1;">
+                <img src="../assets/briefcase-solid.png" alt="Image 1">
+                Company Profile
+            </a>
+
+            <a class="dropdown-item" data-value="2" style="border-bottom:1px solid #D1D1D1;">
+                <img src="../assets/key-solid.png" alt="Image 2">
+                Change Profile
+            </a>
+
+            <a class="dropdown-item" data-value="3">
+                <img src="../assets/logout.png" alt="Image 3">
+                Logout
+            </a>
+        </div>
+    </div>
+</div>
+
     </div>
 
     <!-- table -->
@@ -246,14 +275,20 @@
         <script src=" https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
         <script src=" https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>  
         <script src="../js/layout.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
 </body>
 </html>
 <script>
-    $(document).ready(function () {
-            $('#example').DataTable();
-            $(".dataTables_filter").hide();
-            $(".dataTables_length").hide();
-        });
+     $(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'csvHtml5'
+        ]
+    } );
+} );
+
         function toggleUploadStaffModal() {
   console.log("toggled");
   if (document.getElementById("uploadStaffModal").style.display === "block") {
