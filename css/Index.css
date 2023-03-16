@@ -406,7 +406,6 @@ html {
 .aboutWeapproveImgDiv {
   width: 80%;
   height: 35vw;
-  /* background-color: #ffc0cb; */
   overflow: hidden;
 }
 
@@ -415,24 +414,23 @@ html {
 }
 
  .weappimg{
-  width: 60%;
+  width: 95%;
   position: relative;
   left: 51%;
-  bottom: 96%; 
-
+  bottom: 120%;  
+  height: 30vw;
 } 
 
 .youtubelink{
-  
   background-color: white;
   border: 1px;
   padding: 29px;
   position: absolute;
-  left: -50%;
-  top: 100%;
-  width: 83%;
-height: 108px;
-} 
+  left: -40%;
+  top: 73.4%;
+  width: 79%;
+  height: 110px;
+}  
 
 .fa-circle-play{
   font-size: 1.5rem;
@@ -441,7 +439,7 @@ height: 108px;
   background-color: #f5f5f5;
 }
 
-.fa-circle-play,button:hover{
+.fa-circle-play,#buttoncontainer:hover{
 background-color: #8E000E ;
 color: #F5F5F5;
 padding: .2rem 1rem;
@@ -450,7 +448,7 @@ transition:all .5s ;
 margin-top: 0;
 }
 
-button{
+#buttoncontainer{
   background: none;
   border: none;
   margin-top: 1rem;
