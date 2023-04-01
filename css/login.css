@@ -282,14 +282,14 @@ a:visited {
     flex-direction: column;
     padding-bottom: 5%;
 }
-#register-btn{
+.register-btn{
     width: 50%;
     height: 10%;
     border: none;
     background-color: #d7b321;
     color: white;
 }
-#register-btn:hover{
+.register-btn:hover{
     background-color: #c6202f;
 }
 .company>input{
