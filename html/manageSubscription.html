@@ -120,7 +120,7 @@
                 <div
                     class="visibledropdown flex px-1 items-center justify-between w-full h-[3.1vw] border-[1px] border-[#EAAC2980] border-solid">
                     <img src="../assets/girl.jpg" alt="" srcset="" class="userImg">
-                    <h1 class="userName text-[1vw] font-medium text-[#707070]">Adeola Thompson</h1>
+                    <span class="userName text-[1vw] font-medium text-[#707070]">Adeola Thompson</span>
                     <span class="dropdown-toggle " style="background-color: transparent !important;"></span>
                     <!-- <span class="dropdown-toggle fa-solid fa-caret-down border-none"></span>  -->
                 </div>
@@ -161,30 +161,34 @@
                 </div>
             </div>
            
+            <button class="makePayment">Make Payment</button>
         </div>
 
+       
+
         <div class="table-responsive">
+            <hr>
             <table data-ordering="false" id="example" class="table " style="width:100%; background-color: white;">
                 <thead>
                     <tr>
                         <th class="sn">S/N</th>
                         <th class="r1-col">Invoice #</th>
-                        <th class="r2-col">Invoice Date</th>
-                        <th class="r3-col">Due Date</th>
-                        <th class="r4-col">Amount (NGN)</th>
-                        <th class="r5-col">Receipt</th>
-                        <th class="r4-col">Pay</th>
+                        <th class="r1-col">Invoice Date</th>
+                        <th class="r1-col">Due Date</th>
+                        <th class="r1-col">Amount (NGN)</th>
+                        <th class="r1-col">Receipt</th>
+                        <th class="r1-col">Status</th>
                     </tr>
                 </thead>
                 <tbody class="pl-3">
                     <tr class="td">
                         <td class="sn">1</td>
                         <td class="r1-col">302393939482</td>
-                        <td class="r2-col">31-04-2022</td>
-                        <td class="r3-col">31-05-2022</td>
-                        <td class="r4-col">32,000.65</td>
-                        <td class="r5-col">Print reciept</td>
-                        <td class="r4-col" ><span style="background-color: #F5F5F5; width: 98%;height: 98%;">Pay</span></td>
+                        <td class="r1-col">31-04-2022</td>
+                        <td class="r1-col">31-05-2022</td>
+                        <td class="r1-col">32,000.65</td>
+                        <td class="r1-col">Print reciept</td>
+                        <td class="r1-col" style="color: #46C527;">Successful</td>
                     </tr>
                 </tbody>
             </table>
@@ -200,23 +204,19 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- date picker -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-  <!-- <script>
-    $(document).ready(function() {
-    $('#calendar-icon').click(function() {
-      $('#datepicker').datepicker('show');
-    });
-    
-    });
-  </script> -->
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
     <script src="../js/layout.js"></script>
 </body>
 
 </html>
 <script>
-    $(document).ready(function () {
-        $('#example').DataTable();
-        $(".dataTables_filter").hide();
-        $(".dataTables_length").hide();
-        // $('.datepicker').datepicker();
-    });
+      $(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'csvHtml5'
+        ]
+    } );
+} );
 </script>

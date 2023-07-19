@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +10,18 @@
     <link href="../css/tables.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="../css/dashboard.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.css">
     <script src="https://kit.fontawesome.com/bade0d0075.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <title>Dashboard</title>
 </head>
+
 <body class="flex ">
     <div>
-            <!-- navbar -->
+        <!-- navbar -->
         <div class='nav-container '>
             <div class='nav-list  '>
                 <img src="../assets/WeApprove black.png" class="logo ">
@@ -28,36 +32,41 @@
                     </div>
                     <div class='link  navitemsdiv '>
                         <i class="fa-solid fa-border-all "></i>
-                        <a href="./processmemo.html" class='anchor' >Process Memo</a>
+                        <a href="./processmemo.html" class='anchor'>Process Memo</a>
                     </div>
                     <div class='link  navitemsdiv'>
                         <i class="fa-solid fa-border-all "></i>
                         <a href="./raisememo.html" class='anchor '>Raise Memo</a>
                     </div>
-                    <div class='link  text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
+                    <div
+                        class='link  text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
                         <i class="fa-solid fa-user-tie text-[1.22vw]"></i>
                         <a href="./managestaff.html" class='anchor ml-[8%]'>Manage Staff</a>
                     </div>
-                    <div class='link  text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
+                    <div
+                        class='link  text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
                         <i class="fa-solid fa-suitcase text-[1.22vw]"></i>
                         <a href="./Managedept.html" class='anchor ml-[8%]'>Manage Department</a>
                     </div>
-                    <div class='link  text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
+                    <div
+                        class='link  text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
                         <i class="fa-solid fa-credit-card text-[1.22vw]"></i>
                         <a href="./manageSubscription.html" class='anchor ml-[8%]'>Manage Subscription</a>
                     </div>
-                    <div class='link  text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
+                    <div
+                        class='link  text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
                         <i class="fa-solid fa-file text-[1.22vw]"></i>
                         <a href="./reports.html" class='anchor ml-[8%]'>Report</a>
                     </div>
-                    <div class='link  text-[#707070] w-full hover:text-[#D40E1F] navitemsdiv font-medium flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]  '>
+                    <div
+                        class='link  text-[#707070] w-full hover:text-[#D40E1F] navitemsdiv font-medium flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]  '>
                         <i class="fa-solid fa-arrow-right-from-bracket text-[1.22vw]"></i>
                         <a href="" class='anchor ml-[8%]'>Log out</a>
                     </div>
                 </div>
             </div>
         </div>
-          <!-- mobile nav bar -->
+        <!-- mobile nav bar -->
         <div class="mobilenavlogodiv">
             <i class="fa-solid fa-bars" onclick="toggleNav()"></i>
             <img src="../assets/WeApprove black.png" class="mobilelogo ">
@@ -105,41 +114,42 @@
                 </div>
             </div>
         </div>
-      </div>
-   
-        <!-- Dropdown menu -->
-        <div class="dropdownDiv">
-            <div class="dropdown">
-                <div class="visibledropdown flex px-1 items-center justify-between w-full h-[3.1vw] border-[1px] border-[#EAAC2980] border-solid">
-                    <img src="../assets/girl.jpg" alt="" srcset="" class="userImg">
-                    <h1 class="userName">Adeola Thompson</h1>
-                    <!-- <span class="dropdown-toggle " style="background-color: transparent !important;"></span> -->
-                    <i class="dropdown-toggle fa-solid fa-caret-down border-none "></i> 
-                </div>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" data-value="1">
+    </div>
+
+    <!-- Dropdown menu -->
+    <div class="dropdownDiv">
+        <div class="dropdown">
+            <div
+                class="visibledropdown flex px-1 items-center justify-between w-full h-[3.1vw] border-[1px] border-[#EAAC2980] border-solid">
+                <img src="../assets/girl.jpg" alt="" srcset="" class="userImg">
+                <span class="userName text-[1vw] font-medium text-[#707070]">Adeola Thompson</span>
+                <!-- <span class="dropdown-toggle " style="background-color: transparent !important;"></span> -->
+                <i class="dropdown-toggle fa-solid fa-caret-down border-none "></i>
+            </div>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" data-value="1">
                     <img src="../assets/briefcase-solid.png" alt="Image 1">
                     Company Profile
-                  </a>
-                  <hr>
-                  <a class="dropdown-item" data-value="2">
+                </a>
+                <hr>
+                <a class="dropdown-item" data-value="2">
                     <img src="../assets/key-solid.png" alt="Image 2">
                     Change Profile
-                  </a>
-                  <hr>
-                  <a class="dropdown-item" data-value="3">
+                </a>
+                <hr>
+                <a class="dropdown-item" data-value="3">
                     <img src="../assets/logout.png" alt="Image 3">
                     Logout
-                  </a>
-                </div>
-              </div>      
+                </a>
+            </div>
         </div>
+    </div>
 
     </div>
-    
- <div class="">
+
+    <div class="">
         <main role="main" class="">
-           <div class="div-section">
+            <div class="div-section">
                 <div class="one-section">
                     <p class="dashboard-text">Dashboard</p>
                     <div class="another-section">
@@ -157,23 +167,44 @@
                                 <h3 class="cont-h3">1134</h3>
                                 <p class="cont-p">All memos raised</p>
                                 <hr>
-                                <p class="cont-p">844 memos accepted</p>
+                                <div class="sect">
+                                    <i class="fa-regular fa-circle-check" style="color:white;"></i>
+                                    <p class="cont-p">844 memos accepted</p>
+                                </div>
+
+                               <div class="sect">
+                                <i class="fa-regular fa-circle-xmark" style="color:white;"></i>
                                 <p class="cont-p">32 memos rejected</p>
+                               </div>
+                                
+                               <div class="sect">
+                                <i class="fa-regular fa-hourglass" style="color:white;"></i>
                                 <p class="cont-p">32 memos rejected</p>
+                               </div>
                             </div>
                             <div class="second-container">
                                 <div class="contain">
                                     <span class="contain-span">
                                         <i class="fa-solid fa-table-cells-large contain-i"></i>
                                     </span>
-                                    <h3 class="contain-h3">Total department</h3>
                                 </div>
+                                <h3 class="cont-h3">315</h3>
+                                <p>Total Department</p>
+
                                 <hr>
+                                <div class="sect">
+                                    <img src="/assets/success.png">
+                                <p class="cont-p">300 departments active</p>
+                                </div>
+                                <div class="sect">
+                                    <img src="/assets/inactive.png">
+                                <p class="cont-p">15 Departments inactive</p>
+                                </div>
+                            
                                 <div class="contain-div">
-                                    <h3 class="con-h3">315</h3>
-                                    <span
-                                        class="con-span">
-                                        <i class="fa-solid fa-caret-up con-i"></i>
+                                    
+                                    <span class="con-span">
+                                        <i class="fa-solid fa-caret-up con-i" class="caret-up"></i>
                                         <span class="con-text">1,17%</span>
                                     </span>
                                 </div>
@@ -183,11 +214,21 @@
                                     <span class="div-spanOne">
                                         <i class="fa-solid fa-user div-i"></i>
                                     </span>
-                                    <h3 class="div-h3">Total Number of Staff</h3>
+                                    
                                 </div>
+                                <h3 class="cont-h3">680</h3>
+                                <p>Total Number of Staff</p>
                                 <hr>
+                                <div class="sect">
+                                    <img src="/assets/success.png">
+                                <p class="cont-p">500 Staffs active</p>
+                                </div>
+                                <div class="sect">
+                                    <img src="/assets/inactive.png">
+                                <p class="cont-p">180 Staffs inactive</p>
+                                </div>
                                 <div class="two-div">
-                                    <h3 class="div-spanh3">680</h3>
+                                   
                                     <span class="div-spanTwo">
                                         <i class="fa-solid fa-caret-up div-spani"></i>
                                         <span class="span-div">1,17%</span>
@@ -198,213 +239,47 @@
                         <!-- @*chart*@ -->
                         <h6 class="chart-h6">Statistics</h6>
                         <div class="chart">
-                            <div class="">
+                            <div class="Overview">
                                 <p class="chart-p">Overview</p>
+                                <div class="days">
+                                    <div class="daily">
+                                        <div class="dailyDiv">
+                                            <div class="budget-div27"></div>
+                                            <p>Daily</p>
+                                        </div>
+                                    </div>
+                                    <div class="daily">
+                                        <div class="budget-div17"></div>
+                                        <p>Weekly</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="chart-divOne">
                                 <canvas id="myChart" class="chart-canvas"></canvas>
                             </div>
                         </div>
-                        <h6 class="chart-h6Two">Manage Staff</h6>
-                        <div class="chart-two">
-                            <div class='chart-three'>
-                                <!-- table head -->
-<table  data-ordering="false" id="example" class="table " style="width:100%; background-color: white;">
-    <thead>
-        <tr>
-            <th class="sn" >S/N</th>
-            <th class="r1-col">Staff Name</th>
-            <th class="r2-col">Department</th>
-            <th class="r3-col">Assign Role</th>
-            <th class="r4-col" style="text-align:center;">Action</th>
-        </tr>
-    </thead>
-    <tbody class="pl-3">
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col ">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-        <tr class="td">
-            <td class="sn">1.</td>
-            <td class="r1-col">Tiger Nixon</td>
-            <td class="r2-col">System Architect</td>
-            <td class="r3-col">
-                <select class=" dropdown-dash">
-                          <option value="" disabled selected hidden>Choose an option</option>
-                        <option value="option1" >Option 1</option>
-                          <option value="option2" class='outline-none'>Option 2</option>
-                          <option value="option3" class='outline-none'>Option 3</option>
-                          <option value="option3" disable selected>-------</option>
-                      </select></td>
-            <td class="r4-col"><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>    
-    </tbody>
-</table></div>
-                            </div>
+
                     </div>
                     <!-- report -->
                     <div class=" xl:w-[19.8vw] w-[25%] ml-[3.8vw] ">
                         <p class="report-text">Report</p>
                         <div class="report-div">
+                            <div class="memoSum">
                             <p class="report-memo">Memo Summary</p>
+                            <select name=""  class="opt">
+                                <option>Today</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                              </select>
+                            </div>
                             <div class="report-div2">
                                 <div class="">
                                     <div class="report-div3">
                                         <p class="report-raised">Memos Raised</p>
-                                        <span
-                                            class="span-report">
+                                        <span class="span-report">
                                             <i class="fa-solid fa-wave-square"></i>
-                                            <span>70%</span>
+                                            <span>324%</span>
                                         </span>
                                     </div>
                                     <div class="report-div4">
@@ -413,9 +288,9 @@
                                 </div>
                                 <div class="report-div5">
                                     <div class="report-div6">
+                                        
                                         <p class="report-accepted">Memos Accepted</p>
-                                        <span
-                                            class="span-accepted">
+                                        <span class="span-accepted">
                                             <i class="fa-solid fa-wave-square"></i>
                                             <span>80%</span>
                                         </span>
@@ -427,8 +302,7 @@
                                 <div class="report-div8">
                                     <div class='report-div9'>
                                         <p class="report-rejected">Memos Rejected</p>
-                                        <span
-                                            class="span-rejected">
+                                        <span class="span-rejected">
                                             <i class="fa-solid fa-wave-square"></i>
                                             <span>50%</span>
                                         </span>
@@ -442,7 +316,7 @@
                                         <p class="report-pending">Memos Pending</p>
                                         <span class="span-pending">
                                             <i class="fa-solid fa-wave-square"></i>
-                                            <span>90%</span>
+                                        <span>80%</span>
                                         </span>
                                     </div>
                                     <div class="inner-reportdiv4">
@@ -455,30 +329,38 @@
                         <!-- Budget Requirements -->
                         <div class="budget">
                             <div class="budget-div1">
-                                <p class="p-budget">Budget Requirements</p>
+                                <p class="p-budget">Subscription Plan</p>
                                 <button class="budget-button">+</button>
                             </div>
                             <div class="budget-div2">
                                 <span>Cash</span>
-                                <span class="span-budget">#800,000</span>
+                                <span class="span-budget">#32,000</span>
                             </div>
                             <div class="budget-chart">
                                 <!-- <div class="budget-div3" >
                                   
                                 </div>  -->
-                                 <canvas id="pie-Chart" ></canvas>
+
+                                <div class="pie">
+                                    <canvas id="pie-Chart" class="piechart">                                    
+                                    </canvas>
+                                    <p class="val">60%</p> 
+                                </div>
+                               
+
+                            
                                 <div class="budget-div4">
                                     <div class="legend">
-                                        <!-- <img src="/assets/MicrosoftTeams-image (2).png" alt=""> -->
-                                        <p>Subscription</p>
+                                        <img src="/assets/yellocheckicon.png" class="checkIcon" alt="">
+                                        <p>Basic</p>
                                     </div>
                                     <div class="legend">
-                                        <!-- <img src="/assets/MicrosoftTeams-image (1).png" alt=""> -->
-                                        <p>Payment</p>
+                                        <img src="/assets/checkmark circle.png" class="checkIcon" alt="">
+                                        <p>Premium</p>
                                     </div>
                                     <div class="legend">
-                                        <!-- <img src="/assets/MicrosoftTeams-image.png" alt=""> -->
-                                        <p>Expenses</p>
+                                        <img src="/assets/checkmarkred.png" class="checkIcon" alt="">
+                                        <p>Standard</p>
                                     </div>
 
                                 </div>
@@ -486,16 +368,14 @@
                             <hr>
                             <div class="budget-div5">
                                 <div class="budget-div6">
-                                    <div class="budget-div7"></div>
-                                    <p>Yearly</p>
+                                    <div class="budgetDiv1">
+                                        <div class="budget-div7"></div>
+                                        <p>Yearly</p>
+                                    </div>
                                 </div>
                                 <div class="budget-div6">
                                     <div class="budget-div7"></div>
                                     <p>Monthly</p>
-                                </div>
-                                <div class="budget-div6">
-                                    <div class="budget-div7"></div>
-                                    <p>Daily</p>
                                 </div>
                             </div>
                         </div>
@@ -506,108 +386,93 @@
     </div>
 
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src=" https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-        <script src=" https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src=" https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script src=" https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
     <script src="../js/layout.js"></script>
     <script>
         const dropdownToggle = document.querySelector('.dropdown-toggle');
         const dropdownMenu = document.querySelector('.dropdown-menu');
         const dropdownItems = document.querySelectorAll('.dropdown-item');
-       
+
 
 
         dropdownToggle.addEventListener('click', function () {
-        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+            dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
         });
 
         dropdownItems.forEach(item => {
-        item.addEventListener('click', function () {
-            dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
-        });
+            item.addEventListener('click', function () {
+                dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+            });
         });
 
-     
-        
+
+
     </script>
     <script>
-    $(document).ready(function () {
+        $(document).ready(function () {
             $('#example').DataTable();
             $(".dataTables_filter").hide();
             $(".dataTables_length").hide();
         });
-</script>
-<script>
-  var ctx = document.getElementById('myChart').getContext('2d');
-  var myChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-          datasets: [{
-              label: 'Sales',
-              data: [12, 19, 3, 5, 2, 3, 10],
-              backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-              ],
-              borderColor: [
-                  'rgba(255, 99, 132, 1)',
-              ],
-              borderWidth: 1
-          },
-          {
-              label: 'Expenses',
-              data: [7, 11, 5, 8, 3, 7, 4],
-              backgroundColor: [
-                  'rgba(54, 162, 235, 0.2)',
-              ],
-              borderColor: [
-                  'rgba(54, 162, 235, 1)',
-              ],
-              borderWidth: 1
-          }]
-      },
-      options: {
-          scales: {
-              y: {
-                  beginAtZero: true
-              }
-          }
-      }
-  });
-</script>
-<script>
-const canvas = document.getElementById("pie-Chart");
+    </script>
+    <script>
+        const xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 
-const mypieChart = new Chart(canvas, {
-  type: 'doughnut',
-  data: {
-    datasets: [{
-      data: [30, 40,30],
-      backgroundColor: ['red','yellow','green']
-    }]
-  },
-  options: {
-    responsive: true,
-    cutoutPercentage: 60,
-    tooltips: {
-      enabled: true
-    },
-    // elements: {
-    //   center: {
-    //     text: '60%',
-    //     color: 'black',
-    //     fontStyle: 'Arial',
-    //     // sidePadding: 15
-    //   }
-    // }
-  }
-});
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    data: [6860, 7760, 8760, 6760, 8760, 2760, 7760, 6760, 7760, 8760],
+                    borderColor: "red",
+                    fill: false
+                }, {
+                    data: [800, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                    borderColor: "blue",
+                    fill: false
+                }]
+            },
+            options: {
+                legend: { display: false }
+            }
+        });
+    </script>
+    <script>
+        const canvas = document.getElementById("pie-Chart");
+
+        const mypieChart = new Chart(canvas, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [30, 50, 20],
+                    backgroundColor: ['#D40E1F', '#E9AC0E', '#B2DF8A']
+                }]
+            },
+            options: {
+                responsive: true,
+                cutoutPercentage: 70,
+                tooltips: {
+                    enabled: true
+                },
+                // elements: {
+                //   center: {
+                //     text: '60%',
+                //     color: 'black',
+                //     fontStyle: 'Arial',
+                //     // sidePadding: 15
+                //   }
+                // }
+            }
+        });
 
 
-</script>
+    </script>
 
 </body>
+
 </html>

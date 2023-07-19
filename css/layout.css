@@ -19,7 +19,6 @@ body{
 }
 .nav-container {
     width: 18.8vw;
-    min-height: 100vh;
     height: 100vh;
     background-color: #ffffff;
     font-family: "Inter", sans-serif;
@@ -28,7 +27,6 @@ body{
     justify-content: center;
     visibility: hidden;
     display: none;
-    box-shadow: 3px 0px 10px #00000029;
 }
 .nav-container .active {
     color: red;

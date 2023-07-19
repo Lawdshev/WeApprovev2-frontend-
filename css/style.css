@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a,button,section{
   font-family: 'DaxlinePro', sans-serif;
 }
 *{
-    margin: 0
+    margin: 0;
     padding: 0;
 }
 
@@ -585,11 +585,11 @@ input::-webkit-input-placeholder{
   }
  .newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn{
     color: #A5A5A5;
-    font-size:18px;
+    font-size:15px;
   }
   .newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn{
     color: #A5A5A5;
-    font-size:15px;
+    font-size:13px;
   }
 
   }
@@ -601,7 +601,7 @@ input::-webkit-input-placeholder{
 }
 .newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn{
     color: #A5A5A5;
-    font-size:20px;
+    font-size:18px;
   }
   }
   
@@ -920,9 +920,26 @@ input::-webkit-input-placeholder{
     margin: 0 5%;
     border: none;
     color: white;
+    font-size: 12px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px) {
+    .editdepartmentmodaladdstaffbtns{
+    width: 20%;
+    height: 60%;
+    margin: 0 5%;
+    border: none;
+    color: white;
     font-size: 1vw;
     font-weight: 500;
 }
+}
+
+
 /* edit staff */
 
 .newstaffmodaladdstaffbtns {
@@ -961,9 +978,16 @@ input::-webkit-input-placeholder{
   left: 0;
   right: 0;
 }
+
+#filedoc{
+
+margin-left: 20px;
+border-radius: 10px;
+}
+
 .memo-form {
     width: 80vw;
-    min-height: 400px;
+    min-height: 600px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -1046,6 +1070,255 @@ input::-webkit-input-placeholder{
     border: 2px solid #D40E1F ;
  }
 
+ /* * */
+
+ .comgeneral{
+    background-color: #F5F5F5;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: -30px;
+    }
+    
+    .comh{
+       color: #fbfbfb; 
+    }
+    
+    .sech{
+    height: 35px;
+    width: 35px;
+    border-radius: 17.5px;
+    background-color: #D7B31F;
+    font-size: 10px;
+    display: flex;
+    align-items:center ;
+    margin-left: 10px;
+    margin-top: 20px;
+    }
+    
+    .sech h4{
+        margin-left: 13px;
+        color: white;
+    }
+    
+    .secgeneral{
+    position: relative;
+    left: 10px;
+    }
+    
+    .secgeneral h5{
+        margin-left: 45px;
+        margin-top: -35px;
+        color: #A5A5A5; 
+    }
+    
+    .genapp{
+        display: flex;
+        margin-left: 6px;
+        
+    }
+    
+    #htxt{
+        margin-left: 10px;
+    }
+    
+    #htext{
+        margin-top: -10px;
+        margin-left: 45px;
+    }
+    
+    .curvegeneral{
+    background-color: white;
+    width: 80%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    left: 25px;
+    top: 60px;
+    }
+    
+    #imgcom{
+    width: 20px;
+    position: relative;
+    top: -58px;
+    left: 350px;
+    }
+    
+    .curh{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #D7B31F;
+    font-size: 10px;
+    display: flex;
+    align-items:center ;
+    margin-left: -30px;
+    }
+    
+    .curh{
+    position: relative;
+    bottom: 33px;
+    left: 40px;
+    }
+    
+    .curvegeneral h4{
+    margin-left: 10px;
+    color: white;
+    }
+    
+     #place{
+    width: 80%;
+    height: 44px;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    left: 50px;
+
+    }
+    
+    ::placeholder{
+    position: relative;
+    color: #c7c3c3;
+    border: none;
+    }
+    
+    
+    .accndec{
+     height: 30px;
+     display: flex; 
+     margin-top: 140px;
+     position: relative;
+     left: 120px;
+    }
+    
+    #dec{
+    color: #D7B321;
+    background-color: white;
+    margin-left: 30px;
+    width: 150px;
+    border: 1px solid #D7B321;
+    position: relative;
+    top: -15px;
+    }
+    
+    #acc{
+    width: 150px;
+    color: white;
+    background-color: #D7B321;
+    border: none;
+    position: relative;
+    top: -15px;
+    border: #D7B321;
+    }
+    
+#acc:hover,#dec:hover{
+background-color: #D40E1F;
+border: 2px solid #D40E1F ;
+}
+    
+    
+    /* Media Query */ 
+    /* Media Query */
+    /* Media Query */
+    
+@media screen and (max-width:800px){
+.curvegeneral{
+background-color: white;
+width: 70%;
+}
+
+.accndec{
+position: relative;
+top: -10px;
+margin-left: -100px;
+}
+
+#imgcom{
+position: relative;
+left: 180px;
+top: -62px;
+}
+
+#place{
+width: 80%;
+height: 45px;
+}
+
+.comh{
+    color: #fbfbfb; 
+    font-size: 15px;
+ }
+ 
+ .sech{
+ height: 35px;
+ width: 35px;
+ border-radius: 17.5px;
+ background-color: #D7B31F;
+ font-size: 10px;
+ display: flex;
+ align-items:center ;
+ margin-left: 10px;
+ margin-top: 20px;
+ }
+ 
+ .sech h4{
+     margin-left: 13px;
+     color: white;
+     
+ }
+ 
+ .secgeneral{
+ position: relative;
+ left: 10px;
+ 
+ }
+ 
+ .secgeneral h5{
+     margin-left: 45px;
+     margin-top: -35px;
+     color: #A5A5A5; 
+     font-size: 12px;
+ }
+ 
+ .genapp{
+     display: flex;
+     margin-left: 6px;
+     
+ }
+ 
+ #htxt{
+     margin-left: 10px;
+ }
+ 
+ #htext{
+     margin-top: -10px;
+     margin-left: 45px;
+     font-size: 11.5px;
+ }
+ 
+
+
+.curh{
+position: relative;
+bottom: 38px;
+}
+
+#dec{
+margin-left: 30px;
+width: 100px;
+position: relative;
+}
+
+#acc{
+width: 100px;
+}
+
+
+    
+}
+
+/* * */
  @media screen and (min-width:600px){
     .memo-form {
     width: 450px;
