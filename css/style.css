@@ -965,7 +965,7 @@ input::-webkit-input-placeholder{
     cursor: pointer;
 }
 #viewMemomodalcontainer{
-  display: none;
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -1081,7 +1081,7 @@ border-radius: 10px;
     }
     
     .comh{
-       color: #fbfbfb; 
+       color: #A5A5A5; 
     }
     
     .sech{
@@ -1189,7 +1189,8 @@ border-radius: 10px;
      display: flex; 
      margin-top: 140px;
      position: relative;
-     left: 120px;
+     left: 80px;
+     width: 350px;
     }
     
     #dec{
